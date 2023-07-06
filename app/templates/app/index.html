@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/app.css">
+    <title>Inicio</title>
+</head>
+<body>
+    {% load static %}
+    {% extends 'base.html' %}
+    {% block content %}
+    <div id="carrusel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+            <li data-target="#carrusel" data-slide-to="1"></li>
+            <li data-target="#carrusel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src=sismo.png class="d-block w-100" alt="Imagen 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white bg-dark">Sismo 7.9</h5>
+                    <p class="text-white bg-dark">Sismo azota la zona centro del pais</p>
+                </div>
+            </div>
+            <div class="carousel-item" >
+                <img src=Mordo.png class="d-block w-100" alt="Imagen 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white bg-dark">Gripa aviar</h5>
+                    <p class="text-white bg-dark">MINSAL informa primer caso de gripe aviar en Chile</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src=putín.png class="d-block w-100" alt="Imagen 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white bg-dark">Sigue la guerra en Ucrania</h5>
+                    <p class="text-white bg-dark">Putin extiende su reino del terror</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="contenedor" id="contenedor">
+        <div>
+            <img src="Putín.png" alt="primer producto" width="230" height="200">
+            <div>
+                <p id="parrafito1" class="parrafito"></p>
+                <button onclick="document.getElementById('parrafito1').innerText='El presidente ruso, Vladimir Putin, firmó este viernes un decreto por el que se aumenta formalmente a cadena perpetua la pena máxima por traición, en el marco de una campaña para reprimir la disidencia desde el inicio de la guerra en Ucrania.'">Ver</button>
+            </div>
+        </div>
+        <div>
+            <img src="Mordo.png" alt="segundo producto" width="230" height="200">
+            <div>
+                <p id="parrafito2" class="parrafito"></p>
+                <button onclick="document.getElementById('parrafito2').innerText='La influenza aviar (IA) es una enfermedad viral altamente contagiosa que afecta tanto a las aves domésticas como a las silvestres. Aunque con menos frecuencia, también se han aislado virus de influenza aviar en especies de mamíferos, así como en seres humanos.'">Ver</button>
+            </div>
+        </div>
+        <div>
+            <img src="litio.jpg" alt="tercer producto" width="230" height="200">
+            <div>
+                <p id="parrafito3" class="parrafito"></p>
+                <button onclick="document.getElementById('parrafito3').innerText='El objetivo de esta Estrategia Nacional es aumentar las riquezas para el país, desarrollando una industria clave como paso fundamental para vincular el desarrollo económico de Chile con el cambio hacia una economía verde a nivel global. La alta demanda mundial, los elevados precios y las grandes reservas del litio en nuestro país nos permiten ser optimistas y, a la vez, nos llaman a actuar con sentido de urgencia. Es necesario incorporar capital, tecnología, sostenibilidad y agregación de valor, en armonía con las comunidades. Con tal propósito, el desarrollo de la industria del litio será liderado por el Estado e involucrará al sector privado en todo el proceso productivo.'">Ver</button>
+                </div>
+        </div>
+        <div>
+            <img src="lluvia.webp" alt="cuarto producto" width="230" height="200">
+            <div>
+                <p id="parrafito4" class="parrafito"></p>
+                <button onclick="document.getElementById('parrafito4').innerText='Se pronostican intensas lluvias para los proximos dias en la region de valparaiso. La temperatura media de la ciudad será en promedio de 14° con fuertes vientos y chuvascos.'">Ver</button>
+            </div>
+        </div>
+        <div>
+            <img src="contaminacion.jpg" alt="quinto producto" width="230" height="200">
+            <div>
+                <p id="parrafito5" class="parrafito"></p>
+                <button onclick="document.getElementById('parrafito5').innerText='La contaminación es uno de los problemas ambientales más importantes que afectan a nuestro planeta y surge cuando se produce un desequilibrio, como resultado de la adición de cualquier sustancia al medio ambiente, en cantidad tal, que cause efectos adversos en el hombre, en los animales, vegetales o materiales ...'">Ver</button>
+            </div>
+        </div>
+        <div>
+            <img src="terremoto.jpg" alt="sexto producto" width="230" height="200">
+            <div>
+                <p id="parrafito6" class="parrafito"></p>
+                <button onclick="document.getElementById('parrafito6').innerText='Un sismo de magnitud 5,8 sacudió este martes la zona de Balao, en la provincia costera de Guayas, en el suroeste de Ecuador, sin que hasta el momento se haya informado de víctimas ni daños materiales, pero que corresponde a un sector en el que se registró un terremoto de 6,5 el pasado 18 de marzo.'">Ver</button>
+            </div>
+        </div>
+        <div>
+            <img src="choque.jpg" alt="septimo producto" width="230" height="200">
+            <div>
+                <p id="parrafito7" class="parrafito"></p>
+                <button onclick="document.getElementById('parrafito7').innerText='Los hechos ocurrieron cerca de las 08:00 horas a la altura del kilómetro 4 de la ruta que une a Vilcún y Cajón, donde por causas que se investigan, un vehículo menor terminó impactando a un microbus que se trasladaba sin pasajeros.'">Ver</button>
+            </div>
+        </div>
+        <div>
+            <img src="farandula.jpg" alt="octavo producto" width="230" height="200">
+            <div>
+                <p id="parrafito8" class="parrafito"></p>
+                <button onclick="document.getElementById('parrafito8').innerText='Un fuerte descargo es el que realizó la bailarina Valentina Roth en Instagram, donde solicitó a los programas de farándula que no la nombraran más.'">Ver</button>
+                </div>
+        </div>
+    </div> 
+    {% endblock %}
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
